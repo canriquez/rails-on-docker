@@ -1,0 +1,13 @@
+# Dockerfile.rails
+FROM ruby:3.0.3 AS rails-toolbox
+
+# Defauylt directory
+ENV INSTALL_PATH /op/app
+RUN mkdir -p $INSTALL_PATH
+
+#Install rails bundler
+RUN gem install rails bundler
+#RUN chown -R user:user /opt/app
+WORKDIR /opt/app
+# RUn a shell
+CMD ["/bin/sh"]

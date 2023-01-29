@@ -1,0 +1,6 @@
+.git
+.dockerignore
+.env
+server/rails-backend/node_modules/
+server/rails-backend/vendor/bundle/
+server/rails-backend/tmp
